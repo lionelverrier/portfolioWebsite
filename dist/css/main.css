@@ -67,6 +67,23 @@ input[class^=btn-]:hover {
   margin: 4rem 0;
 }
 
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 3px;
+  width: 4rem;
+  background: #ffbc08;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -175,6 +192,37 @@ change #home-b .stats div:nth-child(odd) {
 }
 change #home-b .stats div:nth-child(even) {
   background: #ccc;
+}
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+#home-c .process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  background: #ffbc08;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  padding: 1rem;
+  transition: all 1s;
+}
+#home-c .process-icon {
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: relative;
+  transition: all 1s;
 }
 
 /*# sourceMappingURL=main.css.map */
