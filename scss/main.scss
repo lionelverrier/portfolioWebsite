@@ -162,6 +162,7 @@ img {
         right: 0;
         font-size: 28px;
         background: $main-color;
+        color: set-text-color($main-color);
         border-radius: 50%;
         height: 15px;
         width: 15px;
@@ -170,29 +171,59 @@ img {
         transition: all 1s;
       }
 
-      //this is the process-icon
-      &-icon{
-       border-radius: 50%;
-       background-color: $dark-color;
-       color: #fff;
-       padding: 2rem;
-       width: 70px;
-       height: 70px;
-       line-height: 70px;
-       text-align: center;
-       position: relative;
-       transition: all 1s;
+      //process-icon
+      &-icon {
+        border-radius: 50%;
+        background-color: $dark-color;
+        color: set-text-color($dark-color);
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        position: relative;
+        transition: all 1s;
 
-       &:hover{
-        background: $main-color;
-        width: 90px;
-        height: 90px;
-        line-height: 90px;
+        &:hover {
+          background: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
 
-        .process-step{
-          background: $dark-color;
+          .process-step {
+            background: $dark-color;
+            color: set-text-color($dark-color);
+          }
         }
-       }
+      }
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 3px #fff solid;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background: $main-color;
       }
     }
   }

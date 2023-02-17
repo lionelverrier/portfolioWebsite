@@ -205,6 +205,7 @@ change #home-b .stats div:nth-child(even) {
   right: 0;
   font-size: 28px;
   background: #ffbc08;
+  color: #000;
   border-radius: 50%;
   height: 15px;
   width: 15px;
@@ -232,6 +233,32 @@ change #home-b .stats div:nth-child(even) {
 }
 #home-c .process-icon:hover .process-step {
   background: #333;
+  color: #fff;
+}
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem;
+}
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 3px #fff solid;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0.5rem;
+}
+#main-footer .footer-content .social .fab:hover {
+  background: #ffbc08;
 }
 
 /*# sourceMappingURL=main.css.map */
