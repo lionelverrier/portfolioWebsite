@@ -203,6 +203,42 @@ img {
   }
 }
 
+// About sections
+#about{
+  &-a{
+    .about-info{
+      display: grid;
+      grid-template-areas:
+      'bioimage bio bio'
+      'aw1 aw2 aw3';
+      gap: 1.2rem;
+    }
+
+    //Grid areas
+    .bio-image{
+      grid-area: bioimage;;
+    }
+    .bio{
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+
+    .award-1{
+      grid-area: aw1;
+    }
+    .award-2{
+      grid-area: aw2;
+    }
+
+    .award-1 .fas,
+    .award-2 .fas{
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+}
+
 // Footer
 #main-footer {
   background: $dark-color;
