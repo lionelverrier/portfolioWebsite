@@ -1,6 +1,6 @@
 @import 'config';
 @import 'utilities';
-@import 'item_grid'; 
+@import 'item_grid';
 
 // General styles
 * {
@@ -259,26 +259,25 @@ img {
 
   // About C
   &-c {
-    .about-logos{
+    .about-logos {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
 
-      img{
+      img {
         width: 70%;
-
       }
     }
   }
 
   // About D
-  &-d{
-    .testimonials{
+  &-d {
+    .testimonials {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 0.5rem;
 
-      ul{
+      ul {
         list-style: none;
         margin-top: 1rem;
         display: flex;
@@ -291,12 +290,55 @@ img {
         padding: 0.5rem;
       }
 
-      img{
+      img {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
+    }
+  }
+}
+
+// Contatct Page
+#contact {
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        'name email'
+        'subject phone'
+        'message message';
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      //Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+      .subject-input {
+        grid-area: subject;
+      }
+      .email-input {
+        grid-area: email;
+      }
+      .phone-input {
+        grid-area: phone;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+        // width: 25%;
+        // margin-left: 35%;
+        // align-items: center;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+    button[type='submit']{
+      width: 15%;
     }
   }
 }
