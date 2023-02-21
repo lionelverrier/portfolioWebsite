@@ -476,4 +476,13 @@ change #home-b .stats div:nth-child(even) {
   background: #ffbc08;
 }
 
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+  }
+  #header-home .header-content {
+    padding-top: 5rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
