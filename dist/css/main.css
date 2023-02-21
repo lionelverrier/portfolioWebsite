@@ -441,6 +441,15 @@ change #home-b .stats div:nth-child(even) {
 #contact-a button[type=submit] {
   width: 15%;
 }
+#contact-b .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+#contact-c h1 {
+  text-align: center;
+  font-size: 4rem;
+}
 
 #main-footer {
   background: #333;
