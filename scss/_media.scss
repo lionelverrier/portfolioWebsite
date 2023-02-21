@@ -8,3 +8,40 @@
     }
   }
 }
+
+// Smartphones
+@media(max-width: 500px){
+  #main-nav{
+    flex-direction: column;
+    align-items: center;
+
+    li{
+      padding: 1rem;
+    }
+  }
+
+  #header{
+    &-home{
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+
+        .header-content{
+          display: none;
+        }
+    }
+
+    &-inner{
+      height: 10rem;
+    }
+  }
+
+  //Stack Grid Columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
