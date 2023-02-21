@@ -204,53 +204,67 @@ img {
 }
 
 // About sections
-#about{
-  &-a{
-    .about-info{
+#about {
+  &-a {
+    .about-info {
       display: grid;
       grid-template-areas:
-      'bioimage bio bio'
-      'aw1 aw2 aw3';
+        'bioimage bio bio'
+        'aw1 aw2 aw3';
       gap: 1.2rem;
     }
 
     //Grid areas
-    .bio-image{
-      grid-area: bioimage;;
+    .bio-image {
+      grid-area: bioimage;
     }
-    .bio{
+    .bio {
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
     }
 
-    .award-1{
+    .award-1 {
       grid-area: aw1;
     }
-    .award-2{
+    .award-2 {
       grid-area: aw2;
     }
 
     .award-1 .fas,
-    .award-2 .fas{
+    .award-2 .fas {
       color: $main-color;
       margin: 1rem;
     }
   }
-// About B
-  &-b{
-    .progress{
+  // About B
+  &-b {
+    .progress {
       overflow: hidden;
       height: 20px;
       background: $medium-color;
       border-radius: 5px;
       margin-bottom: 0.6rem;
 
-      div{
+      div {
         height: 100%;
         color: #fff;
         text-align: center;
         background: $main-color;
+      }
+    }
+  }
+
+  // About C
+  &-c {
+    .about-logos{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+
+      img{
+        width: 70%;
+        
       }
     }
   }
