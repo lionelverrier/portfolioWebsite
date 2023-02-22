@@ -37,7 +37,7 @@
   }
 
   //Stack Grid Columns
-  #home-a .specials,
+  // #home-a .specials,
   #home-b .stats,
   #home-c .process,
   #about-d .testimonials,
@@ -49,7 +49,7 @@
   //Home
   #home {
     &-a {
-      .specials div {
+      .technologies div {
         border-bottom: 1px $light-color solid;
         padding-bottom: 1rem;
 
