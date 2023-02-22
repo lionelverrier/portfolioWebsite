@@ -171,7 +171,7 @@ img {
   &-c {
     .process {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
       text-align: center;
 
@@ -394,6 +394,7 @@ img {
       line-height: 40px;
       text-align: center;
       padding: 0.5rem;
+      background: $light-color;
 
       &:hover {
         background: $main-color;
