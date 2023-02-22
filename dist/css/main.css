@@ -7,7 +7,7 @@
 
 .btn-dark, .btn-light, .btn-main {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 0.4rem 1rem;
   transition: all 0.5s;
   border: none;
   cursor: pointer;
@@ -24,6 +24,10 @@
 .btn-dark {
   color: #f4f4f4;
   background-color: #333;
+}
+
+#resume-btn {
+  padding: 0.5rem 0.5rem;
 }
 
 button[class^=btn-]:hover,

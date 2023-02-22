@@ -8,7 +8,7 @@
 // Buttons
 %btn-shared {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 0.4rem 1rem;
   transition: all 0.5s;
   border: none;
   cursor: pointer;
@@ -33,6 +33,9 @@
     background-color: $dark-color;
   }
 }
+#resume-btn {
+  padding: 0.5rem 0.5rem;
+}
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
@@ -41,23 +44,23 @@ input[class^='btn-']:hover {
 }
 
 // Backgrounds
-.bg{
-  &-main{
+.bg {
+  &-main {
     background: $main-color;
     color: set-text-color($main-color);
   }
-  &-dark{
-     background: $dark-color;
-     color: set-text-color($dark-color);
-   }
-    &-light{
-     background: $light-color;
-     color: set-text-color($light-color);
-   }
-    &-medium{
-     background: $medium-color;
-     color: set-text-color($medium-color);
-   }
+  &-dark {
+    background: $dark-color;
+    color: set-text-color($dark-color);
+  }
+  &-light {
+    background: $light-color;
+    color: set-text-color($light-color);
+  }
+  &-medium {
+    background: $medium-color;
+    color: set-text-color($medium-color);
+  }
 }
 
 .lead {
@@ -101,7 +104,7 @@ input[class^='btn-']:hover {
   }
 }
 
-.section-title{
+.section-title {
   font-size: 2rem;
   display: block;
   padding-bottom: 0.5rem;
