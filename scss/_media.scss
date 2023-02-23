@@ -86,25 +86,25 @@
   }
 
   // Contact
-  #contact{
-    &-a{
-      .text-fields{
+  #contact {
+    &-a {
+      .text-fields {
         grid-template-areas:
-        'name'
-        'subject'
-        'email'
-        'phone'
-        'message';
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'message';
       }
     }
 
-    &-b{
-      div{
+    &-b {
+      div {
         margin-bottom: 1rem;
         padding-bottom: 1rem;
         border-bottom: 1px #555 solid;
 
-        &:last-child{
+        &:last-child {
           border: none;
           margin-bottom: 0;
           padding-bottom: 0;
@@ -112,8 +112,8 @@
       }
     }
 
-    &-c{
-      h1{
+    &-c {
+      h1 {
         font-size: 2rem;
       }
     }
@@ -132,9 +132,9 @@
 }
 
 // Landscape
-@media(max-height: 580px){
-  #header-home{
-    .header-content{
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
       padding-top: 3rem;
     }
   }
